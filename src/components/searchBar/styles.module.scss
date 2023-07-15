@@ -1,0 +1,30 @@
+@import '../../styles/mixins.scss';
+
+.searchBar {
+    display: flex;
+    order: 1;
+    width: 100%;
+
+    @include md {
+        order: unset;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    &__input {
+        border-radius: 5px 0 0 5px;;
+        padding: 8px;
+        border: none;
+        flex: 3;
+    }
+
+    &__button {
+        color: #fff;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid #fff;
+        background: #4A55A2;
+        flex: 1;
+    }
+}

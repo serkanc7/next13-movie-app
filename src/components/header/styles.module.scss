@@ -1,0 +1,42 @@
+@import '../../styles/mixins.scss';
+
+.header{
+    background-color: #4A55A2;
+    border-bottom: 4px solid #7895CB;
+    &__container{
+        height: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include md {
+            flex-wrap: nowrap;
+            height: 5rem;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    &__nav{
+        
+    }
+
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+
+        @include md {
+            font-size: 1.2rem;
+            padding: 0 1rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../styles/mixins.scss';
+
+.movieDetail {
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #4A55A2;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sm {
+            flex-direction: row;
+        }
+    }
+
+    &__img {
+        margin-bottom: 1rem;
+        flex: 1;
+        border-radius: 5px;
+
+        img {
+            border-radius: 5px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+
+    &__infoItem{
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    &__infoTitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #4A55A2;
+    }
+}
